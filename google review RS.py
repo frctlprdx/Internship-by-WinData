@@ -87,7 +87,7 @@ def scrape_google_maps_reviews(url, max_reviews=100):
     return df
 
 # URL lokasi Google Maps yang ingin Anda scrape ulasannya
-url = "https://www.google.com/maps/place/Rumah+Sakit+Umum+Daerah+Tamansari/@-6.1438774,106.8167771,17z/data=!4m8!3m7!1s0x2e69f5fd0d4c86bf:0x544d0e1d174e018c!8m2!3d-6.1438827!4d106.819352!9m1!1b1!16s%2Fg%2F1wl06ff9?entry=ttu"
+url = "https://www.google.com/maps/place/Siloam+Hospitals+Kebon+Jeruk/@-6.1910578,106.7589568,17z/data=!4m8!3m7!1s0x2e69f71b743e853f:0xd437f33bf8bb0fca!8m2!3d-6.1910632!4d106.7638277!9m1!1b1!16s%2Fg%2F12156p2d?entry=ttu"
 
 # Scrape ulasan dan simpan dalam DataFrame, batasi ke 500 ulasan
 reviews_df = scrape_google_maps_reviews(url, max_reviews=100)
@@ -96,4 +96,4 @@ reviews_df = scrape_google_maps_reviews(url, max_reviews=100)
 print(reviews_df)
 
 # Simpan ke file Excel
-reviews_df.to_excel("RSUD Tamansari Jakarta Barat.xlsx", index=False)
+reviews_df.to_excel("RS Siloam.xlsx", index=False)
